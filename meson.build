@@ -1,2 +1,2 @@
 project('spiking', 'c')
-executable('spike', 'main.c')
+executable('spike', 'src/main.c')
