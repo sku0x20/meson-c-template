@@ -3,7 +3,7 @@
 ```shell
 meson setup buildDir
 ```
-
+---
 ```shell
 meson compile -C buildDir
 ```
@@ -13,7 +13,7 @@ OR
 cd buildDir
 meson compile
 ```
-
+---
 ```shell
 meson test -C buildDir
 ```
