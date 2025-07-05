@@ -1,4 +1,4 @@
-project('spiking', 'c')
+project('spike', 'c', version: '1.0.0')
 
 src_files = run_command(['python3', 'grab_files.py', 'src'], check: true)
 sources = src_files.stdout().strip().split('\n')
