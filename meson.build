@@ -9,7 +9,6 @@ executable(
 )
 
 unity = files('libs/unity/unity.c')
-
 test_files = run_command(['python3', 'grab_files.py', 'test'], check: true)
 tests = test_files.stdout().strip().split('\n')
 foreach t: tests
