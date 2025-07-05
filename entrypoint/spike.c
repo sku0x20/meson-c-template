@@ -2,7 +2,6 @@
 #include "calculator.h"
 
 int main() {
-    printf("Hello, World! from meson\n");
     // Perform some calculations
     printf("2 + 3 = %d\n", add(2, 3));
     printf("5 - 2 = %d\n", subtract(5, 2));

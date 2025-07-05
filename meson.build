@@ -4,7 +4,7 @@ src_files = run_command(['python3', 'grab_files.py', 'src'], check: true)
 sources = src_files.stdout().strip().split('\n')
 executable(
     'spike',
-    'main.c',sources,
+    'entrypoint/spike.c',sources,
     include_directories: ['src']
 )
 
