@@ -1,6 +1,4 @@
 project('spiking', 'c')
-executable('spike', 'src/main.c')
-
 
 custom_target(
     'grabfiles',
@@ -11,3 +9,7 @@ custom_target(
     capture: false,
     install: false
 )
+
+c = run_command(['python3', '-c', 'print(open("files.txt").read())'], check: true)
+sources = c.stdout().strip().split('\n')
+executable('spike', sources)
